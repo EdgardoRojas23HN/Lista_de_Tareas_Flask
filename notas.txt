@@ -1,0 +1,13 @@
+Pasos para crear el ambiente de desarrollo
+
+1) Creamos la carpeta todoer
+2) Ejecutamos en la terminal para utilizar flask el comando: python -m  venv venv 
+3) Seguido ejecutamos para activar el ambiente virtual el comando: . venv/scripts/activate
+4) instalamos el comando: pip install werkzeug
+5) instalamos el comando: pip install mysql-connector-python
+6) comando: pip install neovim
+7) comando para instalar Flask: pip install Flask
+
+
+*/para declararle la carpeta de inicializacion de variables 
+set FLASK_APP=todo
