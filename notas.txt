@@ -11,3 +11,5 @@ Pasos para crear el ambiente de desarrollo
 
 */para declararle la carpeta de inicializacion de variables 
 set FLASK_APP=todo
+flask --app __init__ run
+set FLASK_ENV=development

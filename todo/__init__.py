@@ -13,6 +13,10 @@ def create_app(): #Esta funcion es necesaria para aplicaciones en Flask
         DATABASE=os.environ.get('FLASK_DATABASE')              
     )
 
+    from . import db
+
+    db.init_app(app)
+    
     @app.route("/hola") #Ruta de pruebas
     def hola():
         return "<p>Hola desde Flask</p>"
