@@ -1,3 +1,4 @@
+from mimetypes import init
 import mysql.connector
 
 import click 
@@ -40,3 +41,4 @@ def init_db_command():
 
 def init_app(app): #Cerramos la conexion
     app.teardown_appcontext(close_db)
+    app.cli.add_comand(init_db_command)
