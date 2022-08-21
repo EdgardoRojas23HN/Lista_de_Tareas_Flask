@@ -16,6 +16,9 @@ def create_app(): #Esta funcion es necesaria para aplicaciones en Flask
     from . import db
 
     db.init_app(app)
+
+    from . import auth
+    app.register_blueprint(auth.bp)
     
     @app.route("/hola") #Ruta de pruebas
     def hola():
